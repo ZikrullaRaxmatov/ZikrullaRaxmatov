@@ -9,27 +9,27 @@ html {
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   html {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   html {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   html {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
