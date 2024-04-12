@@ -1,5 +1,52 @@
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: gray; */
+    border: 1px solid red;
+}
 
 .home-img {
-    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100vh;
+}
+
+.home-items {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 35vh;
+    left: 0;
+    z-index: 10;
+    /* border: 1px solid red; */
+
+}
+
+.home-itmes-content {
+    width: 40%;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.home-social-item, .home-text, .home-greeting {
+    color: white;
+}
+
+.home-social {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+
+.home-social-item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 40px 15px white;
+    transition: all 0.2s ease-out;
+    z-index: 10;
 }

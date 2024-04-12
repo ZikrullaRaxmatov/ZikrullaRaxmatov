@@ -2,6 +2,7 @@
     position: absolute;
     width: 100%;
     height: 100vh;
+    z-index: 10;
 }
 
 .navbar-brand-item {
@@ -14,6 +15,15 @@
     justify-content: end;
     padding-right: 2rem;
 }
+
+.header-nav-link {
+    color: white;
+}
+
+.header-nav-link:hover, .header-nav-link:focus {
+    background-color: white;
+}
+
 
 
 /* // Small devices (landscape phones, 576px and up) */

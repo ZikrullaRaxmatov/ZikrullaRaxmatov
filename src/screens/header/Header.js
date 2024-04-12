@@ -9,26 +9,26 @@ function Header() {
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand navbar-brand-item " href="#!">Hidden brand</a>
+                    <a class="navbar-brand navbar-brand-item text-white" href="#!">Zikrulla Rakhmatov</a>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                         <ul class=" navbar-nav nav-tabs navbar-items  borderborder-danger">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#!">Home</a>
+                                <a class="nav-link header-nav-link" href="#!">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#!">About</a>
+                                <a class="nav-link header-nav-link" href="#!">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#!">Services</a>
+                                <a class="nav-link header-nav-link" href="#!">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#!">Projects</a>
+                                <a class="nav-link header-nav-link" href="#!">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#!">Qualifications</a>
+                                <a class="nav-link header-nav-link" href="#!">Qualifications</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#!">Contact</a>
+                                <a class="nav-link header-nav-link" href="#!">Contact</a>
                             </li>
                         </ul>
                     </div>
