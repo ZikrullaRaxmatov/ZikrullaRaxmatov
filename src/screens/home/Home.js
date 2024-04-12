@@ -1,9 +1,12 @@
 import React from 'react';
+import homeImg from './home_laptop.avif'
+import './Home.css'
+
 
 function Home() {
     return (
-        <div class="btn btn-primary">
-            Click me!
+        <div class="home">
+            <img src={homeImg} alt='home' clas="home-img" />
         </div>
     );
 }

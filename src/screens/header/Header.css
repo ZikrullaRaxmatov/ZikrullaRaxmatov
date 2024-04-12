@@ -1,3 +1,19 @@
+.header {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar-brand-item {
+    padding-left: 2rem;
+}
+
+.navbar-items {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-right: 2rem;
+}
 
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -17,6 +33,7 @@
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+
 
  }
 

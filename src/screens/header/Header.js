@@ -1,18 +1,19 @@
 import React from 'react';
+import './Header.css'
 
 function Header() {
     return (
         <div class="header">
-            <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <nav class="navbar navbar-expand-sm">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="#!">Hidden brand</a>
+                    <a class="navbar-brand navbar-brand-item " href="#!">Hidden brand</a>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <ul class=" navbar-nav nav-tabs w-100 d-flex justify-content-end border border-danger">
+                        <ul class=" navbar-nav nav-tabs navbar-items  borderborder-danger">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#!">Home</a>
+                                <a class="nav-link active" href="#!">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#!">About</a>
