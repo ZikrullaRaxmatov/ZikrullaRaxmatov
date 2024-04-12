@@ -11,7 +11,7 @@
     width: 100%;
     padding: 1rem;
     padding-top: 3rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .services-items-info {
@@ -20,4 +20,33 @@
 
 .services-title, .services-text, .services-tie {
     color: white;
+}
+
+.services-icon {
+    padding-top: 0.8rem;
+    text-align: center;
+    font-size: 2rem;
+    color:rgb(0, 0, 83);
+    /* border: 1px solid red; */
+}
+
+.services-card {
+    border-top: 3px solid rgb(0, 0, 83);
+    border-bottom: 3px solid rgb(0, 0, 83);
+}
+
+.services-card:hover {
+    box-shadow: 0 0 35px 10px white;
+    transition: all 0.4s ease-out;
+}
+
+.services-card-title {
+    text-align: center;
+
+}
+
+.services-card-text {
+ font-size: 0.8rem;
+ text-align: center;
+ color: rgb(65, 65, 65);
 }
