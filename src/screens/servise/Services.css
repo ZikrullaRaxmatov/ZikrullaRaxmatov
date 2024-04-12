@@ -1,0 +1,23 @@
+
+.services-bg {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 83), rgb(122, 122, 255), rgb(0, 0, 83));
+}
+
+.services-items {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    padding-top: 3rem;
+    border: 1px solid red;
+}
+
+.services-items-info {
+    text-align: center;
+}
+
+.services-title, .services-text, .services-tie {
+    color: white;
+}
