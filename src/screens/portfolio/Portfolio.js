@@ -11,37 +11,61 @@ const portfolioData = [
     {
         "id": "1",
         "name": "Tillogram",
+        "desc": "Instagramm clone",
+        "context": "Full-stack MERN Web App (MongoDB, ExpressJS, ReactJS, NodeJs)",
         "img": tg,
+        "demo": "https://github.com/ZikrullaRaxmatov/mern-sm-server",
+        "src": "https://github.com/ZikrullaRaxmatov/mern-sm-client"
     },
 
     {
         "id": "2",
         "name": "Soft Furniture",
-        "img": sf
+        "desc": "Online Shopping",
+        "context": "Responsive ReactJS Web App",
+        "img": sf,
+        "demo": "https://soft-furniture.netlify.app/",
+        "src": "https://github.com/ZikrullaRaxmatov/soft-furniture"
     },
 
     {
         "id": "3",
         "name": "Future Skyscrapers",
-        "img": fs
+        "desc": "Web site",
+        "context": "Responsive ReactJS Web site",
+        "img": fs,
+        "demo": "https://future-skyscrapers.netlify.app/",
+        "src": "https://github.com/ZikrullaRaxmatov/future-skyscrapers"
     },
 
     {
         "id": "4",
         "name": "Disinfection",
-        "img": dw
+        "desc": "Web site",
+        "context": "Responsive ReactJS Web site",
+        "img": dw,
+        "demo": "https://disinfection-world.netlify.app/",
+        "src": "https://github.com/ZikrullaRaxmatov/disinfection"
     },
 
     {
         "id": "5",
         "name": "Green Restaruant",
-        "img": gr
+        "desc": "Web App for Restaruant",
+        "context": "Responsive ReactJS Web App",
+        "img": gr,
+        "demo": "https://greenn-restaurant.netlify.app/",
+        "src": "https://github.com/ZikrullaRaxmatov/delicious-food-by-spa"
     },
 
     {
         "id": "6",
         "name": "Watch Now",
-        "img": wn
+        "desc": "Online searching",
+        "context": "ReactJS Web site",
+        "img": wn,
+        "demo": "https://watchh-now.netlify.app/",
+        "src": "https://github.com/ZikrullaRaxmatov/Watch-now"
     },
 ]
 
@@ -76,8 +100,11 @@ function Portfolio() {
                                     <img src={item.img} alt='tg' class="portfolio-card-img" />
                                     <div class="portfolio-card-context">
                                         <div class="portfolio-card-context-items">
-                                            <h5 class="card-title portfolio-card-title">Dynamic</h5>
-                                            <p class="card-text portfolio-card-text">Websites don't have to be static, I love making pages come to life.</p>
+                                            <h6 class="card-title portfolio-card-title">{item.name}</h6>
+                                            <text class="card-text portfolio-card-text">{item.desc}</text>
+                                            <p class="card-text portfolio-card-text2">{item.context} </p>
+                                            <a rel="noreferrer" href={item.demo} target="_blank" class="portfolio-card-link" >Demo |</a>
+                                            <a rel="noreferrer" href={item.src} target="_blank" class="portfolio-card-link" >Source</a>
                                         </div>
                                     </div>
                                 </div>
