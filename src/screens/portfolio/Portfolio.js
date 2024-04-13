@@ -14,13 +14,16 @@ function Portfolio() {
                 </div>
                 <div class="portfolio-types">
                     <ul class="portfolio-types-items">
-                        <li class="btn rounded-pill portfolio-types-item">All</li>
+                        <li class="btn rounded-pill portfolio-types-item portfolio-active">All</li>
+                        <li class="btn rounded-pill portfolio-types-item1">|</li>
                         <li class="btn rounded-pill portfolio-types-item">Web Sites</li>
+                        <li class="btn rounded-pill portfolio-types-item1">|</li>
                         <li class="btn rounded-pill portfolio-types-item">Web Apps</li>
+                        <li class="btn rounded-pill portfolio-types-item1">|</li>
                         <li class="btn rounded-pill portfolio-types-item">Mobile Apps</li>
                     </ul>
                 </div>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="row row-cols-1 row-cols-md-4 g-2">
                     <div class="col">
                         <div class="card portfolio-card  h-100">
                             <i class="fa-solid fa-chart-simple portfolio-icon"></i>
@@ -38,6 +41,16 @@ function Portfolio() {
                                 <p class="card-text portfolio-card-text">Web development portfolio include both front-end and back-end responsive development.</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="col">
+                        <div class="card portfolio-card h-100">
+                            <i class="fa-solid fa-bolt portfolio-icon"></i>
+                            <div class="card-body">
+                                <h5 class="card-title portfolio-card-title">Fast</h5>
+                                <p class="card-text portfolio-card-text">Fast load times and lag free integrations, highest priority.</p>
+                            </div>
+                        </div><div class="col">
+                    </div>
                     </div>
                     <div class="col">
                         <div class="card portfolio-card h-100">
