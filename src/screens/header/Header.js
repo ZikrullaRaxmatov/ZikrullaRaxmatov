@@ -3,32 +3,32 @@ import './Header.css'
 
 function Header() {
     return (
-        <div class="header">
-            <nav class="navbar navbar-expand-sm">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+        <div className="header">
+            <nav className="navbar navbar-expand-sm">
+                <div className="container ">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand navbar-brand-item text-white" href="#!">Zikrulla Rakhmatov</a>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <ul class=" navbar-nav nav-tabs navbar-items  borderborder-danger">
-                            <li class="nav-item">
-                                <a class="nav-link header-nav-link" href="#!">Home</a>
+                    <a className="navbar-brand text-white grand-hotel-regular" href="#home">Zikrulla Rakhmatov</a>
+                    <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul className=" navbar-nav nav-tabs navbar-items">
+                            <li className="nav-item">
+                                <a className="nav-link header-nav-link" href="#home">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link header-nav-link" href="#!">About</a>
+                            <li className="nav-item">
+                                <a className="nav-link header-nav-link" href="#about">About</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link header-nav-link" href="#!">Services</a>
+                            <li className="nav-item">
+                                <a className="nav-link header-nav-link" href="#services">Services</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link header-nav-link" href="#!">Projects</a>
+                            <li className="nav-item">
+                                <a className="nav-link header-nav-link" href="#projects">Projects</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link header-nav-link" href="#!">Qualifications</a>
+                            <li className="nav-item">
+                                <a className="nav-link header-nav-link" href="#qualifications">Qualifications</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link header-nav-link" href="#!">Contact</a>
+                            <li className="nav-item">
+                                <a className="nav-link header-nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>

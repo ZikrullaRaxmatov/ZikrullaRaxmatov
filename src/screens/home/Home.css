@@ -17,22 +17,26 @@
 .home-items {
     position: absolute;
     display: flex;
-    width: 100%;
     justify-content: center;
-    top: 35vh;
+    align-items: center;
+    top: 0;
     left: 0;
-    z-index: 10;
-    /* border: 1px solid red; */
+    right: 0;
+    bottom: 0;
+    border: 1px solid red;
 
 }
 
 .home-itmes-content {
     width: 40%;
     text-align: center;
-    /* border: 1px solid red; */
+    border: 1px solid red;
+    z-index: 10;
 }
 
-.home-social-item, .home-text, .home-greeting {
+.home-social-item,
+.home-text,
+.home-greeting {
     color: white;
 }
 
@@ -41,12 +45,20 @@
     display: flex;
     list-style: none;
     justify-content: space-evenly;
+    margin-top: 1rem;
     /* border: 1px solid red; */
+}
+
+.home-social-item {
+    font-size: 1.5rem;
+    background-color: transparent;
+
 }
 
 .home-social-item:hover {
     cursor: pointer;
     box-shadow: 0 0 40px 15px white;
     transition: all 0.2s ease-out;
+    background-color: transparent;
     z-index: 10;
 }

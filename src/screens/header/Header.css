@@ -1,3 +1,11 @@
+.grand-hotel-regular {
+    font-family: "Grand Hotel", cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: normal;
+    /* margin-left: 1rem; */
+}
+
 .header {
     position: absolute;
     width: 100%;
@@ -5,49 +13,40 @@
     z-index: 10;
 }
 
-.navbar-brand-item {
-    padding-left: 2rem;
-}
 
 .navbar-items {
     display: flex;
     width: 100%;
     justify-content: end;
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
+}
+
+.nav-item {
+    padding: 0 0.3rem; 
 }
 
 .header-nav-link {
     color: white;
 }
 
-.header-nav-link:hover, .header-nav-link:focus {
+.header-nav-link:hover,
+.header-nav-link:focus {
     background-color: white;
 }
 
 
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-
- }
+@media (min-width: 576px) {}
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-
- }
+@media (min-width: 768px) {}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-
- }
+@media (min-width: 992px) {}
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-
-
- }
+@media (min-width: 1200px) {}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { 
-
- }
+@media (min-width: 1400px) {}
