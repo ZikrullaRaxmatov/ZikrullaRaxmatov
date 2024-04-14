@@ -1,0 +1,86 @@
+.contact-items {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.contact-items-info {
+    padding-top: 1rem;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+
+.contact-title,
+.contact-text,
+.contact-tie {
+    color: rgb(0, 0, 83)
+}
+
+.contact-filed {
+    display: flex;
+    /* border: 1px solid red; */
+
+}
+
+.contact-card {
+    padding: 1rem;
+    margin: 1rem 2rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+}
+
+.contact-card-address,
+.contact-card-email {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contact-card-icon {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 83);
+    margin-bottom: 0.5rem;
+}
+
+.contact-card-text {
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.contact-form {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between;
+}
+
+.contact-form-name,
+.contact-form-email {
+    width: 49%;
+}
+
+.contact-form-name>input,
+.contact-form-email>input,
+.contact-form-message>textarea {
+    padding: 0.5rem;
+    border: 1px solid gray;
+    font-size: 0.8rem;
+}
+
+.contact-form-message>textarea {
+    height: 8rem;
+}
+
+.contact-form-btn {
+    margin-top: 2.2rem;
+}
+
+.contact-form-btn>button {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color:rgb(1, 1, 136);
+}
+
+.contact-form-btn-icon {
+    font-size: 1rem;
+}

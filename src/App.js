@@ -1,5 +1,6 @@
 import './App.css';
 import About from './screens/about/About';
+import Contact from './screens/contact/Contact';
 import Header from './screens/header/Header';
 import Home from './screens/home/Home';
 import Portfolio from './screens/portfolio/Portfolio';
@@ -15,6 +16,7 @@ function App() {
       <Services />
       <Portfolio />
       <Qualification />
+      <Contact />
     </div>
   );
 }
