@@ -23,14 +23,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 
 .home-itmes-content {
     width: 40%;
     text-align: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     z-index: 10;
 }
 
@@ -45,20 +45,30 @@
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     /* border: 1px solid red; */
 }
 
 .home-social-item {
     font-size: 1.5rem;
     background-color: transparent;
-
+    /* border: 1px solid red; */
+    border-radius: 50%
 }
 
 .home-social-item:hover {
     cursor: pointer;
     box-shadow: 0 0 40px 15px white;
     transition: all 0.2s ease-out;
-    background-color: transparent;
-    z-index: 10;
+}
+
+.animated-text {
+    color: rgb(0, 17, 255);
+}
+
+.strelka-down {
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    bottom: 1.5rem;
 }
