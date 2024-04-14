@@ -1,4 +1,5 @@
 import React from 'react';
+import capImg from './cap.avif'
 import './Qualification.css'
 
 function Qualification() {
@@ -23,7 +24,6 @@ function Qualification() {
                                 <div class="section-year">2023-present</div>
                                 <div class="section-name">Master's Degree in International Business</div>
                                 <div class="section-location">Namseoul Unversity, Cheonan, South Korea</div>
-                                {/* <div class="section-buttom"></div> */}
                             </div>
                             <div class="section">
                                 <div class="section-year">2017-2021</div>
@@ -56,6 +56,19 @@ function Qualification() {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <img src={capImg} alt='cap' class="qlf-img" />
+            <div class="container">
+                <div class="qlf-ready">
+                    <div class="qlf-ready-info">
+                        <div class="qlf-ready-context">
+                            <h3>I am ready to take new challenges!</h3>
+                            <button class="btn btn-light rounded-pill">Contact me by Email</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     );

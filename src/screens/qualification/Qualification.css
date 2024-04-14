@@ -22,13 +22,9 @@
 
 .edu-exp {
     display: flex;
-    border: 1px solid red;
-
+    padding-bottom: 1rem;
+    /* border: 1px solid red; */
 }
-
-/* .education {
-    text-align: center;
-} */
 
 .edu-header,
 .exp-header {
@@ -83,13 +79,40 @@
 
 
 .section-location {
-    color:gray;
+    color: gray;
     font-size: 0.8rem;
 }
 
-.section-buttom {
+.qlf-img {
+    position: absolute;
     width: 100%;
-    height: 0.3rem;
-    background-color: white;
-    margin-bottom: 0;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.qlf-ready {
+    position: relative;
+    height: 80vh;
+    /* border: 1px solid red; */
+}
+
+.qlf-ready-info {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* border: 1px solid red; */
+}
+
+.qlf-ready-context>h3{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.qlf-ready-context>button{
+    font-size: 0.8rem;
 }
