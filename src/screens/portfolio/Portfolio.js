@@ -1,4 +1,4 @@
-import React from 'react';
+// import React, { useState } from 'react';
 import dw from './imgs/disinfection.jpg'
 import fs from './imgs/futureskyscrapers.jpg'
 import gr from './imgs/greenrestaruant.jpg'
@@ -11,11 +11,12 @@ const portfolioData = [
     {
         "id": "1",
         "name": "Tillogram",
-        "desc": "Instagramm clone",
+        "desc": "Instagram clone",
         "context": "Full-stack MERN Web App (MongoDB, ExpressJS, ReactJS, NodeJs)",
         "img": tg,
         "demo": "https://github.com/ZikrullaRaxmatov/mern-sm-server",
-        "src": "https://github.com/ZikrullaRaxmatov/mern-sm-client"
+        "src": "https://github.com/ZikrullaRaxmatov/mern-sm-client",
+        "type": "webapp"
     },
 
     {
@@ -25,7 +26,8 @@ const portfolioData = [
         "context": "Responsive ReactJS Web App",
         "img": sf,
         "demo": "https://soft-furniture.netlify.app/",
-        "src": "https://github.com/ZikrullaRaxmatov/soft-furniture"
+        "src": "https://github.com/ZikrullaRaxmatov/soft-furniture",
+        "type": "webapp"
     },
 
     {
@@ -35,7 +37,8 @@ const portfolioData = [
         "context": "Responsive ReactJS Web site",
         "img": fs,
         "demo": "https://future-skyscrapers.netlify.app/",
-        "src": "https://github.com/ZikrullaRaxmatov/future-skyscrapers"
+        "src": "https://github.com/ZikrullaRaxmatov/future-skyscrapers",
+        "type": "website"
     },
 
     {
@@ -45,7 +48,8 @@ const portfolioData = [
         "context": "Responsive ReactJS Web site",
         "img": dw,
         "demo": "https://disinfection-world.netlify.app/",
-        "src": "https://github.com/ZikrullaRaxmatov/disinfection"
+        "src": "https://github.com/ZikrullaRaxmatov/disinfection",
+        "type": "website"
     },
 
     {
@@ -55,7 +59,8 @@ const portfolioData = [
         "context": "Responsive ReactJS Web App",
         "img": gr,
         "demo": "https://greenn-restaurant.netlify.app/",
-        "src": "https://github.com/ZikrullaRaxmatov/delicious-food-by-spa"
+        "src": "https://github.com/ZikrullaRaxmatov/delicious-food-by-spa",
+        "type": "webapp"
     },
 
     {
@@ -65,11 +70,39 @@ const portfolioData = [
         "context": "ReactJS Web site",
         "img": wn,
         "demo": "https://watchh-now.netlify.app/",
-        "src": "https://github.com/ZikrullaRaxmatov/Watch-now"
+        "src": "https://github.com/ZikrullaRaxmatov/Watch-now",
+        "type": "website"
     },
 ]
 
 function Portfolio() {
+
+    // const [newType, setNewType] = useState([])
+
+    const filterAll = () => {
+        // setNewType(...newType, portfolioData)
+        // console.log(newType);
+    }
+
+    const filterSites = () => {
+        // const newSites = portfolioData.filter(s => s.type === "website")
+        // setNewType(...newType, newSites)
+        // console.log(newType);
+    }
+
+    const filterApps = () => {
+        // const newApps = portfolioData.filter(s => s.type === "webapp")
+        // setNewType(...newType, newApps)
+        // console.log(newType);
+    }
+
+    const filterMobile = () => {
+        // const newMobile = portfolioData.filter(s => s.type === "mobile")
+        // setNewType(...newType, newMobile)
+        // console.log(newType);
+    }
+
+
 
     return (
         <div class="portfolio">
@@ -83,13 +116,13 @@ function Portfolio() {
                 </div>
                 <div class="portfolio-types">
                     <ul class="portfolio-types-items">
-                        <li class="btn rounded-pill portfolio-types-item portfolio-active">All</li>
+                        <li class="btn rounded-pill portfolio-types-item portfolio-active" onClick={() => filterAll()}>All</li>
                         <li class="btn rounded-pill portfolio-types-item1">|</li>
-                        <li class="btn rounded-pill portfolio-types-item">Web Sites</li>
+                        <li class="btn rounded-pill portfolio-types-item" onClick={() => filterSites()} >Web Sites</li>
                         <li class="btn rounded-pill portfolio-types-item1">|</li>
-                        <li class="btn rounded-pill portfolio-types-item">Web Apps</li>
+                        <li class="btn rounded-pill portfolio-types-item" onClick={() => filterApps()}>Web Apps</li>
                         <li class="btn rounded-pill portfolio-types-item1">|</li>
-                        <li class="btn rounded-pill portfolio-types-item">Mobile Apps</li>
+                        <li class="btn rounded-pill portfolio-types-item" onClick={() => filterMobile()}>Mobile Apps</li>
                     </ul>
                 </div>
                 <div class="row row-cols-1 row-cols-md-3 g-2 mt-lg-4 pb-2 portfolio-cards-bg">
