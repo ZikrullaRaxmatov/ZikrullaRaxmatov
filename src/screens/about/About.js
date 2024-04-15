@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css'
 import aboutBg from './developer.avif'
+import resume from './Zikrulla_Rakhmatov_Resume.pdf'
 
 function About() {
     return (
@@ -9,8 +10,6 @@ function About() {
                 <div class="raw about-items">
                     <div class="col-6 about-items-left">
                         <img src={aboutBg} alt='aboutBg' class="about-items-left-bg" />
-                        {/* <div class="about-items-left-img">
-                        </div> */}
                     </div>
                     <div class="col-6 about-items-right">
                         <h4 class="about-items-name" >My name is Zikrulla Rakhmatov.</h4>
@@ -37,8 +36,8 @@ function About() {
                         </div>
 
                         <div class="about-items-right-btns">
-                            <button class="btn rounded-pill btn-portfolio">Portfolio</button>
-                            <button class="btn rounded-pill btn-resume">Resume</button>
+                            <a href='#projects' class="btn rounded-pill btn-portfolio">Portfolio</a>
+                            <a href={resume} download class="btn rounded-pill btn-resume">Resume</a>
                         </div>
 
                     </div>
