@@ -4,7 +4,7 @@ import aboutBg from './me.jpg'
 
 function About() {
     return (
-        <div class="about">
+        <div class="about" id='about'>
             <div class="container">
                 <div class="raw about-items">
                     <div class="col-6 about-items-left">

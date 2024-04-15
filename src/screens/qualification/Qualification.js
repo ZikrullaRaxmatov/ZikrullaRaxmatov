@@ -4,7 +4,7 @@ import './Qualification.css'
 
 function Qualification() {
     return (
-        <div class="qlf">
+        <div class="qlf" id='qualifications'>
             <div class="container">
                 <div class="qlf-items">
                     <div class="qlf-items-info">

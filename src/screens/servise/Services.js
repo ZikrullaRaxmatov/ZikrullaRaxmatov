@@ -3,7 +3,7 @@ import './Services.css'
 
 function Services() {
     return (
-        <div class="services">
+        <div class="services" id='services' >
             <div class="services-bg">
                 <div class="container">
                     <div class="services-items">

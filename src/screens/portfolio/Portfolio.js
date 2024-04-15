@@ -105,11 +105,11 @@ function Portfolio() {
 
 
     return (
-        <div class="portfolio">
+        <div class="portfolio" id='projects' >
             <div class="container">
                 <div class="portfolio-items">
                     <div class="portfolio-items-info">
-                        <h2 class="portfolio-title">My Portfolio</h2>
+                        <h2 class="portfolio-title">My Projects & Portfolio</h2>
                         <p class="portfolio-text">Below you can see some projects I've been working recently.</p>
                         <h3 class="portfolio-tie">|</h3>
                     </div>
