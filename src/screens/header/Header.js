@@ -32,6 +32,11 @@ function Header() {
                             </li>
                         </ul>
                     </div>
+                    <div className="go-top">
+                        <a href='#home' className="go-top-item">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>

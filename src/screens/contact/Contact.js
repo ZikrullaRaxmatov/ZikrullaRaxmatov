@@ -1,7 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.css'
+import { toast } from 'react-toastify';
 
 function Contact() {
+
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+    const chat_id = "755982207"
+    const token = "6938246066:AAFABAOOs99SSLocVIyzj3l1OJKmUYR4r7g"
+
+    const submit = async () => {
+        // e.preventDefault()
+
+        if (name && email) {
+            await fetch(`https://api.telegram.org/bot${token}/sendmessage`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    chat_id: chat_id,
+                    text: `Phone: ${name} \nEmail: ${email} \nMessage: ${message} `
+                })
+            })
+                .then(res => res.json())
+                .then(data => {
+                    toast.success("Your information has been send successfully!")
+                    setName("")
+                    setEmail("")
+                    setMessage("")
+                })
+                .catch(err => {
+                    toast.error("Somthing went wrong!")
+                })
+        } else {
+            toast.error("Please, fill out the fields!")
+        }
+    }
+
     return (
         <div class="contact" id='contact'>
             <div class="container">
@@ -30,17 +67,39 @@ function Contact() {
                     <div class="col-8">
                         <div class="contact-form">
                             <div class="col-6 contact-form-name">
-                                <input type="text" class="form-control" placeholder='Name *' required />
+                                <input 
+                                type="text" 
+                                class="form-control" 
+                                placeholder='Name *' 
+                                required 
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                />
                             </div>
                             <div class="col-6 contact-form-email">
-                                <input type="email" class="form-control" placeholder='Email *' required />
+                                <input 
+                                type="email" 
+                                class="form-control" 
+                                placeholder='Email *' 
+                                required 
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                />
                             </div>
                         </div>
                         <div class="contact-form-message">
-                            <textarea type="password" class="form-control" placeholder='Write your message here ' />
+                            <textarea
+                                type="password"
+                                class="form-control"
+                                placeholder='Write your message here '
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                            />
                         </div>
                         <div class="contact-form-btn ">
-                            <button type="submit" class="btn btn-primary rounded-pill w-100"><i class="fa-solid fa-paper-plane contact-form-btn-icon"></i></button>
+                            <button type="submit" class="btn btn-primary rounded-pill w-100" onClick={() => submit()}>
+                                <i class="fa-solid fa-paper-plane contact-form-btn-icon"></i>
+                            </button>
                         </div>
                     </div>
                 </div>

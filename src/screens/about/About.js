@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css'
-import aboutBg from './me.jpg'
+import aboutBg from './developer.avif'
 
 function About() {
     return (
