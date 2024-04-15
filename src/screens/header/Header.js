@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css'
 
 function Header() {
+
+    const [upBtn, setUpBtn] = useState(false)
+    const [bgColor, setBgColor] = useState(false)
+
+    const displayUpButton = () => {
+        if (window.scrollY >= 120) {
+            setUpBtn(true)
+        } else {
+            setUpBtn(false)
+        }
+
+        if (window.scrollY >= 550) {
+            setBgColor(true)
+        } else {
+            setBgColor(false)
+        }
+    }
+
+    window.addEventListener('scroll', displayUpButton)
+
     return (
         <div className="header">
-            <nav className="navbar navbar-expand-sm">
+            <nav className={bgColor ? "navbar navbar-expand-sm fixed-top navbar-bgColor" : "navbar navbar-expand-sm fixed-top"}>
                 <div className="container ">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -32,7 +52,7 @@ function Header() {
                             </li>
                         </ul>
                     </div>
-                    <div className="go-top">
+                    <div className={upBtn ? "go-top" : "d-none"} >
                         <a href='#home' className="go-top-item">
                             <i class="fa-solid fa-chevron-up"></i>
                         </a>
